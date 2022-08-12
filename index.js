@@ -23,6 +23,8 @@ drawCardBtn.addEventListener("click", () => {
             cardsContainer.children[1].innerHTML = `
                 <img src=${data.cards[1].image} class="card" />
             `
+        const winnerText = cardWinner(data.cards[0], data.cards[1])
+        document.getElementById('message').innerText = winnerText
         })
 })
 
@@ -32,19 +34,10 @@ function cardWinner(card1, card2) {
     card2valueIndex = valueOptions.indexOf(card2.value)
 
     if (card1valueIndex === card2valueIndex) {
-        console.log("It's a tie") 
+        return 'War!'
     } else if (card1valueIndex > card2valueIndex) {
-        console.log("Card 1 is the winner") 
+        return 'Card 1 wins'
     } else {
-        console.log("Card 2 is the winner")
+        return 'Card 2 wins'
     }
 }
-
-const card1Obj = {
-    value: "7"
-}
-const card2Obj = {
-    value: "KING"
-}
-
-cardWinner(card1Obj, card2Obj)
