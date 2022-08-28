@@ -18,7 +18,7 @@ To start this project locally:
 
 Clone the repository:
 ```
-git clone git@github.com:Patka879/exercises.git
+git clone git@github.com:Patka879/war-card-game.git
 ```
 Go to the directory of the projects and open HTML file in the browser.
 ## Inspiration
