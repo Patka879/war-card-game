@@ -1,5 +1,5 @@
 # WAR CARD GAME
-##### Basic war - card game based on API. 
+##### Basic war-card game based on API. 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
